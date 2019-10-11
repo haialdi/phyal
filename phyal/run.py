@@ -3,6 +3,7 @@ import requests
 import time
 import urllib
 
+
 TOKEN = "963828742:AAGw4M8ldb4IJ6CLpOm0rAOF9jhjy-zFmks"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
@@ -52,8 +53,8 @@ def send_message(text, chat_id):
     get_url(url)
 
 
-text, chat = get_last_chat_id_and_text(get_updates())
-send_message(text, chat)
+# text, chat = get_last_chat_id_and_text(get_updates())
+# send_message(text, chat)
 
 
 def get_updates(offset=None):
