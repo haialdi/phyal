@@ -51,5 +51,3 @@ def send_message(text, chat_id):
     get_url(url)
 
 
-text, chat = get_last_chat_id_and_text(get_updates())
-send_message(text, chat)
